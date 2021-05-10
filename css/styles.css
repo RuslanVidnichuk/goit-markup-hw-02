@@ -4,6 +4,7 @@
   --primary-background-color: #fff;
   --secondary-background-color: #f5f4fa;
   --accent-color: #2196f3;
+  --header-logo-color: #000;
 }
 
 body {
@@ -23,7 +24,7 @@ body {
   text-decoration: none;
 }
 .header-studio {
-  color: #000;
+  color: var(--header-logo-color);
 }
 .nav-list {
   font-weight: 500;
@@ -82,8 +83,8 @@ body {
   letter-spacing: 0.06em;
 }
 .hero-button:hover,
-.hero button:focus {
-  background-color: #188ce8;
+.hero-button:focus {
+  background-color: var(--accent-color);
 }
 /* Особенности */
 .features-list {
@@ -146,6 +147,7 @@ body {
   font-size: 16px;
   line-height: 1.62;
   background-color: var(--secondary-background-color);
+  cursor: pointer;
 }
 .filter-item:hover,
 .filter-item:focus {
